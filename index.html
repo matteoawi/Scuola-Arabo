@@ -2,7 +2,6 @@
 <style>
   /* Import del font */
   @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
-  
 
   #aljariri-landing-page {
     /* Palette Colori (Zero nero puro) */
@@ -557,6 +556,138 @@
      #aljariri-landing-page .lp-logo-box { width: 140px; height: 40px; } /* Più piccolo su smartphone stretti */
      #aljariri-landing-page .lp-nav-phone { font-size: 0.9rem; padding: 6px 12px; }
   }
+  /* DESIGN SYSTEM & RESPONSIVE REFINEMENT */
+  #aljariri-landing-page {
+    --container-wide: 1180px;
+    --container-reading: 820px;
+    --section-space: clamp(56px, 7vw, 92px);
+  }
+  #aljariri-landing-page .lp-container { max-width: var(--container-wide); padding-inline: clamp(18px, 3vw, 28px); }
+  #aljariri-landing-page .lp-top-bar { backdrop-filter: saturate(140%); }
+  #aljariri-landing-page .lp-navbar { position: relative; z-index: 20; }
+  #aljariri-landing-page .lp-nav-inner { min-height: 72px; gap: 20px; }
+  #aljariri-landing-page .lp-logo-box { width: clamp(190px, 22vw, 250px); height: clamp(52px, 6vw, 70px); flex: 0 1 auto; }
+  #aljariri-landing-page .lp-nav-phone { white-space: nowrap; }
+
+  #aljariri-landing-page .lp-hero { padding: clamp(46px, 7vw, 78px) 0 clamp(52px, 6vw, 72px); overflow: hidden; position: relative; }
+  #aljariri-landing-page .lp-hero::before {
+    content: ''; position: absolute; width: 420px; height: 420px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(37,99,235,.12) 0%, rgba(37,99,235,0) 68%);
+    right: -120px; top: -120px; pointer-events: none;
+  }
+  #aljariri-landing-page .lp-hero-grid { gap: clamp(34px, 5vw, 64px); position: relative; z-index: 1; }
+  #aljariri-landing-page .lp-tagline { box-shadow: 0 8px 22px rgba(230,30,56,.16); }
+  #aljariri-landing-page .lp-hero h1 { font-size: clamp(2.35rem, 4.5vw, 4rem); letter-spacing: -0.035em; max-width: 760px; }
+  #aljariri-landing-page .lp-hero p.lp-subhead { font-size: clamp(1rem, 1.6vw, 1.16rem); max-width: 700px; }
+  #aljariri-landing-page .lp-hero-buttons { align-items: flex-start; }
+  #aljariri-landing-page .lp-hero-buttons .lp-btn { min-width: min(100%, 390px); }
+  #aljariri-landing-page .lp-card-rounded { padding: clamp(8px, 1.2vw, 12px); }
+  #aljariri-landing-page .lp-img-placeholder { aspect-ratio: 4/3; min-height: 0; }
+
+  #aljariri-landing-page .lp-pain-section,
+  #aljariri-landing-page .lp-solution-section,
+  #aljariri-landing-page .lp-offer-section,
+  #aljariri-landing-page .lp-proof-section,
+  #aljariri-landing-page .lp-cta-center-section,
+  #aljariri-landing-page .lp-faq-section { padding-block: var(--section-space); }
+  #aljariri-landing-page .lp-title-wrap { margin-bottom: clamp(34px, 5vw, 54px); }
+  #aljariri-landing-page .lp-title-wrap h2 { letter-spacing: -0.025em; }
+
+  #aljariri-landing-page .lp-pain-grid,
+  #aljariri-landing-page .lp-solution-grid,
+  #aljariri-landing-page .lp-proof-grid { gap: clamp(18px, 2.5vw, 28px); }
+  #aljariri-landing-page .lp-pain-card,
+  #aljariri-landing-page .lp-solution-card,
+  #aljariri-landing-page .lp-proof-card,
+  #aljariri-landing-page .lp-faq-item { transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+  @media (hover:hover) {
+    #aljariri-landing-page .lp-pain-card:hover,
+    #aljariri-landing-page .lp-solution-card:hover,
+    #aljariri-landing-page .lp-proof-card:hover,
+    #aljariri-landing-page .lp-faq-item:hover { transform: translateY(-4px); box-shadow: var(--shadow-elevated); }
+  }
+  #aljariri-landing-page .lp-offer-box, #aljariri-landing-page .lp-cta-box { padding: clamp(30px, 5vw, 52px); }
+  #aljariri-landing-page .lp-offer-checklist { max-width: 700px; }
+  #aljariri-landing-page .lp-offer-checklist li { align-items: flex-start; }
+
+  /* TABLET */
+  @media (max-width: 1024px) {
+    #aljariri-landing-page { padding-bottom: 88px; }
+    #aljariri-landing-page .lp-hero-grid { grid-template-columns: 1fr 0.9fr; gap: 32px; }
+    #aljariri-landing-page .lp-hero h1 { font-size: clamp(2.5rem, 5vw, 3.5rem); }
+    #aljariri-landing-page .lp-pain-grid { grid-template-columns: repeat(3, minmax(0,1fr)); gap: 18px; }
+    #aljariri-landing-page .lp-pain-card { padding: 24px 18px; }
+    #aljariri-landing-page .lp-solution-card { padding: 26px 22px; }
+  }
+
+  @media (max-width: 850px) {
+    #aljariri-landing-page .lp-top-bar { font-size: .82rem; line-height: 1.45; padding: 9px 14px; }
+    #aljariri-landing-page .lp-navbar { padding: 8px 0; }
+    #aljariri-landing-page .lp-nav-inner { min-height: 60px; }
+    #aljariri-landing-page .lp-logo-box { width: 176px; height: 50px; }
+    #aljariri-landing-page .lp-nav-phone { font-size: .92rem; padding: 8px 14px; }
+    #aljariri-landing-page .lp-hero { padding-top: 44px; }
+    #aljariri-landing-page .lp-hero-grid { grid-template-columns: 1fr; }
+    #aljariri-landing-page .lp-hero-grid > div:first-child { order: 1; }
+    #aljariri-landing-page .lp-hero-grid > div:last-child { order: 2; max-width: 680px; width: 100%; margin: 0 auto; }
+    #aljariri-landing-page .lp-hero-buttons { flex-direction: row; flex-wrap: wrap; }
+    #aljariri-landing-page .lp-hero-buttons .lp-btn { min-width: 0; flex: 1 1 280px; }
+    #aljariri-landing-page .lp-pain-grid { grid-template-columns: 1fr; }
+    #aljariri-landing-page .lp-solution-grid, #aljariri-landing-page .lp-proof-grid { grid-template-columns: 1fr 1fr; }
+    #aljariri-landing-page .lp-floating-mobile { display: block; padding-bottom: calc(12px + env(safe-area-inset-bottom)); }
+  }
+
+  /* MOBILE */
+  @media (max-width: 640px) {
+    #aljariri-landing-page { padding-bottom: 96px; }
+    #aljariri-landing-page .lp-container { padding-inline: 16px; }
+    #aljariri-landing-page .lp-top-bar { position: relative; font-size: .78rem; padding-inline: 12px; }
+    #aljariri-landing-page .lp-nav-inner { gap: 10px; }
+    #aljariri-landing-page .lp-logo-box { width: 150px; height: 44px; }
+    #aljariri-landing-page .lp-nav-phone { font-size: 0; width: 44px; height: 44px; padding: 0; justify-content: center; border-radius: 50%; flex: 0 0 44px; }
+    #aljariri-landing-page .lp-nav-phone::before { content: '📞'; font-size: 1.05rem; }
+    #aljariri-landing-page .lp-hero { padding: 36px 0 50px; }
+    #aljariri-landing-page .lp-tagline { font-size: .72rem; line-height: 1.35; padding: 7px 12px; margin-bottom: 16px; }
+    #aljariri-landing-page .lp-hero h1 { font-size: clamp(2rem, 10vw, 2.75rem); line-height: 1.08; }
+    #aljariri-landing-page .lp-hero p.lp-subhead { font-size: 1rem; margin-bottom: 24px; }
+    #aljariri-landing-page .lp-hero-buttons { flex-direction: column; gap: 10px; margin-bottom: 18px; }
+    #aljariri-landing-page .lp-hero-buttons .lp-btn { width: 100%; flex-basis: auto; }
+    #aljariri-landing-page .lp-btn { width: 100%; padding: 15px 18px; font-size: .96rem; line-height: 1.25; }
+    #aljariri-landing-page .lp-micro-trust { align-items: flex-start; font-size: .84rem; line-height: 1.45; }
+    #aljariri-landing-page .lp-img-placeholder { aspect-ratio: 4/3; }
+    #aljariri-landing-page .lp-title-wrap { text-align: left; margin-bottom: 28px; }
+    #aljariri-landing-page .lp-title-wrap h2 { font-size: clamp(1.7rem, 8vw, 2.15rem); }
+    #aljariri-landing-page .lp-pain-card, #aljariri-landing-page .lp-solution-card, #aljariri-landing-page .lp-proof-card, #aljariri-landing-page .lp-faq-item { border-radius: 18px; }
+    #aljariri-landing-page .lp-pain-card { padding: 22px 18px; }
+    #aljariri-landing-page .lp-pain-flip { padding: 20px 18px; font-size: 1rem; text-align: left; }
+    #aljariri-landing-page .lp-solution-grid, #aljariri-landing-page .lp-proof-grid { grid-template-columns: 1fr; }
+    #aljariri-landing-page .lp-solution-card { padding: 22px 18px; gap: 14px; }
+    #aljariri-landing-page .lp-sol-icon { width: 44px; height: 44px; font-size: 1.25rem; }
+    #aljariri-landing-page .lp-offer-box { border-width: 2px; text-align: left; }
+    #aljariri-landing-page .lp-pill-badge { margin-bottom: 14px; }
+    #aljariri-landing-page .lp-offer-box h3 { font-size: 1.65rem; }
+    #aljariri-landing-page .lp-offer-checklist li { font-size: .97rem; line-height: 1.45; }
+    #aljariri-landing-page .lp-proof-card { padding: 24px 20px; }
+    #aljariri-landing-page .lp-cta-box { text-align: left; }
+    #aljariri-landing-page .lp-cta-box h2 { font-size: 1.75rem; }
+    #aljariri-landing-page .lp-faq-item { padding: 20px 18px; }
+    #aljariri-landing-page .lp-faq-item h4 { font-size: 1.02rem; }
+    #aljariri-landing-page .lp-footer { padding: 40px 0 28px; }
+    #aljariri-landing-page .lp-floating-mobile { padding: 10px 12px calc(10px + env(safe-area-inset-bottom)); }
+    #aljariri-landing-page .lp-floating-mobile .lp-btn { padding: 13px 12px; font-size: .94rem; box-shadow: 0 8px 22px rgba(16,185,129,.28); }
+  }
+
+  @media (max-width: 380px) {
+    #aljariri-landing-page .lp-logo-box { width: 132px; height: 40px; }
+    #aljariri-landing-page .lp-hero h1 { font-size: 1.95rem; }
+    #aljariri-landing-page .lp-tagline { letter-spacing: .02em; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #aljariri-landing-page *, #aljariri-landing-page *::before, #aljariri-landing-page *::after { scroll-behavior: auto !important; animation: none !important; transition: none !important; }
+    #aljariri-landing-page .lp-animate { opacity: 1 !important; transform: none !important; }
+  }
+
 </style>
 
 <div id="aljariri-landing-page">
