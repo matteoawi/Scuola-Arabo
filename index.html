@@ -954,6 +954,334 @@
 </style>
 
 
+
+<style id="aljariri-responsive-v4">
+/* ===== RESPONSIVE SYSTEM V4: mobile / tablet / desktop ===== */
+html,body{margin:0;padding:0;max-width:100%;overflow-x:hidden}
+#aljariri-landing-page{overflow-x:clip}
+#aljariri-landing-page .lp-container{width:min(100%,1180px);margin-inline:auto}
+#aljariri-landing-page .lp-nav-inner,
+#aljariri-landing-page .lp-hero-grid,
+#aljariri-landing-page .lp-pain-grid,
+#aljariri-landing-page .lp-solution-grid,
+#aljariri-landing-page .lp-proof-grid{min-width:0}
+#aljariri-landing-page .lp-brand-wrap,
+#aljariri-landing-page .lp-brand-copy,
+#aljariri-landing-page .lp-hero-grid>*{min-width:0}
+#aljariri-landing-page .lp-floating-mobile{display:none!important}
+
+/* DESKTOP 1200+ */
+@media (min-width:1200px){
+  #aljariri-landing-page .lp-container{padding-inline:28px}
+  #aljariri-landing-page .lp-brand-copy{display:flex!important}
+  #aljariri-landing-page .lp-logo-box{width:156px;height:58px}
+  #aljariri-landing-page .lp-hero{padding:76px 0 72px}
+  #aljariri-landing-page .lp-hero-grid{grid-template-columns:minmax(0,1.08fr) minmax(380px,.92fr);gap:64px;align-items:center}
+  #aljariri-landing-page .lp-pain-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+  #aljariri-landing-page .lp-solution-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+  #aljariri-landing-page .lp-proof-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+}
+
+/* LAPTOP / SMALL DESKTOP 1024-1199 */
+@media (min-width:1024px) and (max-width:1199px){
+  #aljariri-landing-page .lp-container{padding-inline:28px;max-width:1080px}
+  #aljariri-landing-page .lp-brand-copy{display:flex!important}
+  #aljariri-landing-page .lp-logo-box{width:132px;height:52px}
+  #aljariri-landing-page .lp-brand-title{font-size:.9rem}
+  #aljariri-landing-page .lp-brand-subtitle{font-size:.7rem}
+  #aljariri-landing-page .lp-site-link{display:inline-flex!important}
+  #aljariri-landing-page .lp-hero{padding:64px 0 62px}
+  #aljariri-landing-page .lp-hero-grid{grid-template-columns:minmax(0,1.05fr) minmax(340px,.95fr);gap:38px;align-items:center}
+  #aljariri-landing-page .lp-hero h1{font-size:clamp(2.65rem,4.5vw,3.55rem)}
+  #aljariri-landing-page .lp-img-placeholder{min-height:420px}
+  #aljariri-landing-page .lp-pain-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+  #aljariri-landing-page .lp-solution-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+  #aljariri-landing-page .lp-proof-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+}
+
+/* TABLET 768-1023 */
+@media (min-width:768px) and (max-width:1023px){
+  #aljariri-landing-page{padding-bottom:0}
+  #aljariri-landing-page .lp-container{padding-inline:26px;max-width:900px}
+  #aljariri-landing-page .lp-top-bar{position:relative;padding:8px 18px;font-size:.78rem}
+  #aljariri-landing-page .lp-navbar{padding:10px 0}
+  #aljariri-landing-page .lp-nav-inner{min-height:58px;gap:16px}
+  #aljariri-landing-page .lp-logo-box{width:112px;height:44px;flex:0 0 auto}
+  #aljariri-landing-page .lp-brand-copy{display:flex!important}
+  #aljariri-landing-page .lp-brand-title{font-size:.84rem;white-space:normal}
+  #aljariri-landing-page .lp-brand-subtitle{display:block!important;font-size:.64rem}
+  #aljariri-landing-page .lp-site-link{display:none!important}
+  #aljariri-landing-page .lp-nav-phone{font-size:.82rem!important;width:auto!important;height:auto!important;padding:10px 13px!important;border-radius:12px!important;flex:0 0 auto}
+  #aljariri-landing-page .lp-nav-phone::before{content:none!important}
+  #aljariri-landing-page .lp-hero{padding:50px 0 54px}
+  #aljariri-landing-page .lp-hero-grid{grid-template-columns:1fr;gap:34px}
+  #aljariri-landing-page .lp-hero-grid>div:last-child{max-width:760px;width:100%;margin-inline:auto}
+  #aljariri-landing-page .lp-hero h1{font-size:clamp(2.7rem,7vw,3.8rem);max-width:760px}
+  #aljariri-landing-page .lp-hero p.lp-subhead{max-width:760px;font-size:1.02rem}
+  #aljariri-landing-page .lp-hero-buttons{grid-template-columns:minmax(0,1.25fr) minmax(220px,.75fr);gap:12px;max-width:760px}
+  #aljariri-landing-page .lp-card-rounded{transform:none;max-width:760px;margin-inline:auto}
+  #aljariri-landing-page .lp-img-placeholder{min-height:0;aspect-ratio:16/9}
+  #aljariri-landing-page .lp-pain-section,
+  #aljariri-landing-page .lp-solution-section,
+  #aljariri-landing-page .lp-proof-section,
+  #aljariri-landing-page .lp-faq-section,
+  #aljariri-landing-page .lp-offer-section,
+  #aljariri-landing-page .lp-cta-center-section{padding:72px 0}
+  #aljariri-landing-page .lp-pain-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+  #aljariri-landing-page .lp-pain-card{padding:24px 20px}
+  #aljariri-landing-page .lp-solution-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+  #aljariri-landing-page .lp-solution-card{padding:24px 22px}
+  #aljariri-landing-page .lp-proof-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+  #aljariri-landing-page .lp-offer-box{padding:48px 40px}
+  #aljariri-landing-page .lp-floating-mobile{display:none!important}
+}
+
+/* MOBILE 0-767 */
+@media (max-width:767px){
+  #aljariri-landing-page{padding-bottom:84px}
+  #aljariri-landing-page .lp-container{padding-inline:17px}
+  #aljariri-landing-page .lp-top-bar{position:relative;padding:8px 12px;font-size:.73rem;line-height:1.35}
+  #aljariri-landing-page .lp-top-actions{display:none!important}
+  #aljariri-landing-page .lp-navbar{padding:9px 0}
+  #aljariri-landing-page .lp-nav-inner{min-height:54px;gap:9px}
+  #aljariri-landing-page .lp-brand-wrap{gap:9px;flex:1 1 auto;overflow:hidden}
+  #aljariri-landing-page .lp-logo-box{width:74px;height:36px;flex:0 0 74px}
+  #aljariri-landing-page .lp-brand-copy{display:flex!important;overflow:hidden}
+  #aljariri-landing-page .lp-brand-title{font-size:.76rem;line-height:1.12;white-space:normal!important}
+  #aljariri-landing-page .lp-brand-subtitle{display:block!important;font-size:.56rem;line-height:1.2;margin-top:3px;white-space:normal!important}
+  #aljariri-landing-page .lp-site-link{display:none!important}
+  #aljariri-landing-page .lp-nav-phone{font-size:0!important;width:40px!important;height:40px!important;padding:0!important;border-radius:12px!important;flex:0 0 40px;display:inline-flex;align-items:center;justify-content:center}
+  #aljariri-landing-page .lp-nav-phone::before{content:'☎';font-size:1rem}
+  #aljariri-landing-page .lp-hero{padding:34px 0 42px}
+  #aljariri-landing-page .lp-hero:after{font-size:5.5rem;right:-2%;bottom:-20px}
+  #aljariri-landing-page .lp-hero-grid{grid-template-columns:1fr;gap:28px}
+  #aljariri-landing-page .lp-tagline{font-size:.63rem;line-height:1.35;padding:7px 10px;margin-bottom:15px;white-space:normal}
+  #aljariri-landing-page .lp-hero h1{font-size:clamp(2.05rem,10.8vw,2.85rem);line-height:1.02;letter-spacing:-.04em;margin-bottom:17px}
+  #aljariri-landing-page .lp-hero p.lp-subhead{font-size:.94rem;line-height:1.62;margin-bottom:21px}
+  #aljariri-landing-page .lp-hero-buttons{display:grid;grid-template-columns:1fr;gap:9px;margin-bottom:17px}
+  #aljariri-landing-page .lp-btn{width:100%;min-width:0!important;min-height:51px;padding:13px 14px;font-size:.86rem;line-height:1.25;white-space:normal}
+  #aljariri-landing-page .lp-micro-trust{display:flex;align-items:flex-start;gap:5px;flex-direction:column;font-size:.72rem;line-height:1.42;padding:9px 11px}
+  #aljariri-landing-page .lp-card-rounded{transform:none;padding:7px;border-radius:22px;max-width:100%}
+  #aljariri-landing-page .lp-img-placeholder{min-height:0;aspect-ratio:4/3;border-radius:17px}
+  #aljariri-landing-page .lp-img-placeholder img{border-radius:17px}
+  #aljariri-landing-page .lp-card-rounded:after{left:15px;bottom:15px;font-size:.62rem;padding:7px 9px}
+  #aljariri-landing-page .lp-pain-section,
+  #aljariri-landing-page .lp-solution-section,
+  #aljariri-landing-page .lp-proof-section,
+  #aljariri-landing-page .lp-faq-section,
+  #aljariri-landing-page .lp-offer-section,
+  #aljariri-landing-page .lp-cta-center-section{padding:54px 0}
+  #aljariri-landing-page .lp-title-wrap{text-align:left;margin-bottom:30px}
+  #aljariri-landing-page .lp-title-wrap h2{font-size:clamp(1.75rem,8.5vw,2.25rem);line-height:1.12}
+  #aljariri-landing-page .lp-title-wrap p{font-size:.9rem;line-height:1.6}
+  #aljariri-landing-page .lp-pain-grid,
+  #aljariri-landing-page .lp-solution-grid,
+  #aljariri-landing-page .lp-proof-grid{grid-template-columns:1fr!important;gap:13px}
+  #aljariri-landing-page .lp-pain-card,
+  #aljariri-landing-page .lp-solution-card,
+  #aljariri-landing-page .lp-proof-card{padding:22px 19px}
+  #aljariri-landing-page .lp-solution-card{gap:14px}
+  #aljariri-landing-page .lp-sol-icon{width:41px;height:41px;flex:0 0 41px;border-radius:12px}
+  #aljariri-landing-page .lp-pain-flip{margin-top:18px;padding:20px 18px;text-align:left;font-size:.96rem;line-height:1.5}
+  #aljariri-landing-page .lp-offer-box{padding:34px 18px;border-radius:22px;text-align:left}
+  #aljariri-landing-page .lp-offer-box h3{font-size:clamp(1.65rem,8vw,2.15rem);line-height:1.12}
+  #aljariri-landing-page .lp-offer-checklist{display:block;width:100%}
+  #aljariri-landing-page .lp-offer-checklist li{font-size:.88rem;line-height:1.48;align-items:flex-start;gap:9px}
+  #aljariri-landing-page .lp-cta-box{padding:34px 18px;border-radius:22px;text-align:left}
+  #aljariri-landing-page .lp-cta-box h2{font-size:clamp(1.75rem,8vw,2.15rem);line-height:1.12}
+  #aljariri-landing-page .lp-cta-box>div{display:grid!important;grid-template-columns:1fr!important;gap:9px!important}
+  #aljariri-landing-page .lp-faq-item{padding:19px 18px;border-radius:16px}
+  #aljariri-landing-page .lp-faq-item h4{font-size:.96rem;line-height:1.42}
+  #aljariri-landing-page .lp-faq-item p{font-size:.9rem;line-height:1.58}
+  #aljariri-landing-page .lp-footer{text-align:left;padding:40px 0 26px}
+  #aljariri-landing-page .lp-footer p{font-size:.82rem;line-height:1.55;overflow-wrap:anywhere}
+  #aljariri-landing-page .lp-floating-mobile{display:block!important;padding:9px 11px calc(9px + env(safe-area-inset-bottom));}
+  #aljariri-landing-page .lp-floating-mobile .lp-btn{min-height:50px;font-size:.84rem;padding:12px 12px}
+}
+
+/* SMALL MOBILE */
+@media (max-width:390px){
+  #aljariri-landing-page .lp-container{padding-inline:14px}
+  #aljariri-landing-page .lp-logo-box{width:62px;height:33px;flex-basis:62px}
+  #aljariri-landing-page .lp-brand-title{font-size:.69rem}
+  #aljariri-landing-page .lp-brand-subtitle{font-size:.52rem}
+  #aljariri-landing-page .lp-hero h1{font-size:clamp(1.92rem,10.5vw,2.35rem)}
+  #aljariri-landing-page .lp-btn{font-size:.81rem;padding-inline:11px}
+}
+</style>
+
+
+<style id="aljariri-hero-hotfix">
+/* HERO HOTFIX — regole finali isolate per evitare conflitti tra i vecchi breakpoint */
+#aljariri-landing-page .lp-hero{
+  position:relative!important;
+  overflow:hidden!important;
+  padding:clamp(44px,5vw,76px) 0 clamp(48px,5vw,72px)!important;
+}
+#aljariri-landing-page .lp-hero .lp-hero-grid{
+  display:grid!important;
+  grid-template-columns:minmax(0,1.06fr) minmax(340px,.94fr)!important;
+  align-items:center!important;
+  gap:clamp(32px,4.5vw,64px)!important;
+}
+#aljariri-landing-page .lp-hero-copy,
+#aljariri-landing-page .lp-hero-media{min-width:0!important;width:100%!important;}
+#aljariri-landing-page .lp-hero-copy{position:relative;z-index:2;}
+#aljariri-landing-page .lp-hero h1{
+  font-size:clamp(2.65rem,4.7vw,4.5rem)!important;
+  line-height:1.02!important;
+  letter-spacing:-.045em!important;
+  max-width:760px!important;
+  text-wrap:balance;
+}
+#aljariri-landing-page .lp-hero p.lp-subhead{
+  max-width:680px!important;
+  font-size:clamp(1rem,1.25vw,1.1rem)!important;
+  line-height:1.7!important;
+}
+#aljariri-landing-page .lp-hero-buttons{
+  display:grid!important;
+  grid-template-columns:minmax(0,1.35fr) minmax(190px,.65fr)!important;
+  gap:12px!important;
+  align-items:stretch!important;
+}
+#aljariri-landing-page .lp-hero-buttons .lp-btn{
+  width:100%!important;
+  min-width:0!important;
+  max-width:none!important;
+  white-space:normal!important;
+  line-height:1.25!important;
+  padding:15px 20px!important;
+}
+#aljariri-landing-page .lp-micro-trust{
+  flex-wrap:wrap!important;
+  align-items:flex-start!important;
+  line-height:1.45!important;
+}
+#aljariri-landing-page .lp-hero-media{
+  position:relative!important;
+  z-index:1!important;
+}
+#aljariri-landing-page .lp-hero-media .lp-card-rounded{
+  width:100%!important;
+  max-width:560px!important;
+  margin-inline:auto!important;
+  padding:9px!important;
+  transform:none!important;
+  border-radius:30px!important;
+  overflow:visible!important;
+}
+#aljariri-landing-page .lp-hero-media .lp-img-placeholder{
+  position:relative!important;
+  width:100%!important;
+  min-height:0!important;
+  height:auto!important;
+  aspect-ratio:4 / 5!important;
+  overflow:hidden!important;
+  border:0!important;
+  border-radius:23px!important;
+}
+#aljariri-landing-page .lp-hero-media .lp-img-placeholder img{
+  position:absolute!important;
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  max-width:none!important;
+  object-fit:cover!important;
+  object-position:center center!important;
+  border-radius:23px!important;
+}
+
+/* Laptop */
+@media (min-width:1024px) and (max-width:1199px){
+  #aljariri-landing-page .lp-hero .lp-hero-grid{
+    grid-template-columns:minmax(0,1.08fr) minmax(320px,.92fr)!important;
+    gap:34px!important;
+  }
+  #aljariri-landing-page .lp-hero h1{font-size:clamp(2.55rem,4.3vw,3.55rem)!important;}
+  #aljariri-landing-page .lp-hero-media .lp-card-rounded{max-width:470px!important;}
+}
+
+/* Tablet */
+@media (min-width:768px) and (max-width:1023px){
+  #aljariri-landing-page .lp-hero{padding:46px 0 52px!important;}
+  #aljariri-landing-page .lp-hero .lp-hero-grid{
+    grid-template-columns:1fr!important;
+    gap:30px!important;
+  }
+  #aljariri-landing-page .lp-hero-copy{max-width:760px!important;margin-inline:auto!important;}
+  #aljariri-landing-page .lp-hero h1{font-size:clamp(2.65rem,7vw,3.75rem)!important;}
+  #aljariri-landing-page .lp-hero-buttons{
+    grid-template-columns:minmax(0,1.25fr) minmax(220px,.75fr)!important;
+  }
+  #aljariri-landing-page .lp-hero-media{max-width:760px!important;margin-inline:auto!important;}
+  #aljariri-landing-page .lp-hero-media .lp-card-rounded{max-width:760px!important;}
+  #aljariri-landing-page .lp-hero-media .lp-img-placeholder{aspect-ratio:16 / 9!important;}
+}
+
+/* Mobile */
+@media (max-width:767px){
+  #aljariri-landing-page .lp-hero{padding:30px 0 38px!important;}
+  #aljariri-landing-page .lp-hero .lp-hero-grid{
+    grid-template-columns:1fr!important;
+    gap:24px!important;
+  }
+  #aljariri-landing-page .lp-hero-copy{order:1!important;}
+  #aljariri-landing-page .lp-hero-media{order:2!important;}
+  #aljariri-landing-page .lp-tagline{
+    font-size:.68rem!important;
+    line-height:1.35!important;
+    padding:7px 11px!important;
+    margin-bottom:14px!important;
+    max-width:100%!important;
+    white-space:normal!important;
+  }
+  #aljariri-landing-page .lp-hero h1{
+    font-size:clamp(2rem,10.4vw,2.8rem)!important;
+    line-height:1.03!important;
+    margin-bottom:16px!important;
+  }
+  #aljariri-landing-page .lp-hero p.lp-subhead{
+    font-size:.95rem!important;
+    line-height:1.62!important;
+    margin-bottom:20px!important;
+  }
+  #aljariri-landing-page .lp-hero-buttons{
+    grid-template-columns:1fr!important;
+    gap:9px!important;
+    margin-bottom:16px!important;
+  }
+  #aljariri-landing-page .lp-hero-buttons .lp-btn{
+    font-size:.92rem!important;
+    padding:14px 15px!important;
+  }
+  #aljariri-landing-page .lp-micro-trust{
+    display:grid!important;
+    grid-template-columns:1fr!important;
+    gap:3px!important;
+    font-size:.8rem!important;
+  }
+  #aljariri-landing-page .lp-hero-media .lp-card-rounded{
+    max-width:100%!important;
+    padding:6px!important;
+    border-radius:22px!important;
+  }
+  #aljariri-landing-page .lp-hero-media .lp-img-placeholder{
+    aspect-ratio:4 / 3!important;
+    border-radius:17px!important;
+  }
+  #aljariri-landing-page .lp-hero-media .lp-img-placeholder img{border-radius:17px!important;}
+  #aljariri-landing-page .lp-hero-media .lp-card-rounded:after{
+    left:14px!important;bottom:14px!important;font-size:.62rem!important;padding:6px 9px!important;
+  }
+}
+
+@media (max-width:390px){
+  #aljariri-landing-page .lp-hero h1{font-size:clamp(1.9rem,10vw,2.3rem)!important;}
+  #aljariri-landing-page .lp-hero-buttons .lp-btn{font-size:.86rem!important;}
+}
+</style>
+
 </head>
 <body>
 <div id="aljariri-landing-page">
@@ -990,7 +1318,7 @@
   <!-- 2. HERO SECTION -->
   <div class="lp-hero">
     <div class="lp-container lp-hero-grid">
-      <div class="lp-animate">
+      <div class="lp-animate lp-hero-copy">
         <span class="lp-tagline">📍 Scuola di Arabo a Roma &amp; Online • 20+ Anni di Esperienza</span>
         <h1>Parlare e Capire l’Arabo <span>Non È Impossibile.</span></h1>
         <p class="lp-subhead">
@@ -1012,12 +1340,12 @@
         </div>
       </div>
 
-      <!-- PLACEHOLDER IMMAGINE HERO -->
-      <div class="lp-animate">
+      <!-- IMMAGINE HERO -->
+      <div class="lp-animate lp-hero-media">
         <div class="lp-card-rounded">
           <div class="lp-img-placeholder">
             <!-- SOSTITUISCI CON IL LINK DELLA TUA FOTO DOCENTE/AULA DALLA LIBRERIA WORDPRESS -->
-            <img src="https://aljaririlegaltranslations.it/wp-content/uploads/2025/12/HZ5A5720.png" alt="Docente di Arabo Al Jariri Roma" loading="lazy">
+            <img src="https://aljaririlegaltranslations.it/wp-content/uploads/2025/12/HZ5A5720.png" alt="Docente di Arabo Al Jariri Roma" loading="eager" fetchpriority="high" decoding="async">
           </div>
         </div>
       </div>
